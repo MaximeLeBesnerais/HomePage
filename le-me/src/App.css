@@ -1,0 +1,147 @@
+:root {
+  --primary-color: #3498db; /* Primary color */
+  --secondary-color: #f39c12; /* Secondary color */
+  --text-color: #333333; /* Text color */
+  --background-color: #f0f0f0; /* Background color */
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: var(--background-color);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.content::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section h2 {
+  margin: 0;
+  text-align: center;
+}
+
+
+section.name {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+.education h2,
+.projects h2,
+.skills h2,
+.networks h2 {
+  font-size: 44px;
+  color: var(--primary-color);
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.education-list li {
+  margin-bottom: 20px;
+}
+
+.education-list h3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.education-list p {
+  margin: 5px 0;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-pill {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.project-pill.large {
+  width: calc(66% - 10px); /* Adjust the width based on the desired number of tiles */
+  margin-top: 20px; /* Add margin to create separation from the above tiles */
+}
+
+.project-pill p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #666;
+}
