@@ -3,7 +3,7 @@
 # Pull the repo, npm run build, move the build folder to the server, and restart the server
 
 # Pull the repo
-git pull
+git pull origin main
 
 # Build the app
 cd under-maintenance
