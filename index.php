@@ -69,4 +69,5 @@
         <p>I am working on it, please come back later.</p>
     </div>
 </body>
+<?php include('php/footer.php'); ?>
 </html>
