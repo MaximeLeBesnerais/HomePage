@@ -21,3 +21,5 @@ mv build/* /var/www/html/ || exit 1
 
 # restart the server
 sudo service apache2 restart || exit 1
+
+cd .. || exit 1
