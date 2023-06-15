@@ -3,22 +3,21 @@
 # Pull the repo, npm run build, move the build folder to the server, and restart the server
 
 # Pull the repo
-git pull origin main
+git pull origin main || exit 1
 
-# Build the app
-cd under-maintenance
+cd under-maintenance/ || exit 1
 
 # Install dependencies
-npm install
+npm install || exit 1
 
 # Build the app
-npm run build
+npm run build || exit 1
 
 # erase the old html files
-rm -rf /var/www/html/*
+rm -rf /var/www/html/* || exit 1
 
 # move the new html files
-mv build/* /var/www/html/
+mv build/* /var/www/html/ || exit 1
 
 # restart the server
-sudo service apache2 restart
+sudo service apache2 restart || exit 1
