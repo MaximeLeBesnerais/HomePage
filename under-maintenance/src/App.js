@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <a href="https://www.linkedin.com/in/mlebes/" target="_blank" rel="noreferrer">
-          <img src={linkedinIcon} className="App-logo" alt="linkedin" />
+          <img src={linkedinIcon} alt="linkedin" className='App-logo' />
         </a>
         <a href="https://github.com/MaximeLeBesnerais" target="_blank" rel="noreferrer">
-          <img src={githubIcon} className="App-logo" alt="github" />
+          <img src={githubIcon} alt="github" className='App-logo' />
         </a>
       </header>
       <div className="App-content">
