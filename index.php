@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Website Under Maintenance</title>
-    <link rel="stylesheet" href="css/basic.css">
 </head>
 <body>
     <header id="banner">
