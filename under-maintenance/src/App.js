@@ -20,6 +20,9 @@ function App() {
         <h1>Website is not ready yet</h1>
         <p>I am working on it, please come back later.</p>
       </div>
+      <footer className="App-footer">
+        <p>© 2023 Maxime Le Besnerais. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
