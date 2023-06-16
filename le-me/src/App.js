@@ -30,31 +30,31 @@ function App() {
           className={`education section1 ${
             activeSection === "education" ? "active" : ""
           }`}
-          tabIndex="0" // Add this attribute
+          tabIndex="0"
         >
           <h2>Education</h2>
-          <ul className="education-list">
-            <li>
+          <div className="education-container">
+            <div className="education-card">
               <h3>EPITECH - Lyon</h3>
               <p>Expert in Information Technology</p>
               <p>2022-2026</p>
-            </li>
-            <li>
+            </div>
+            <div className="education-card">
               <h3>ESQESE - Lyon</h3>
               <p>Licence 1 - Bachelor Science of Numerical Systems</p>
               <p>2021-2022</p>
-            </li>
-            <li>
+            </div>
+            <div className="education-card">
               <h3>Université Claude Bernard Lyon 1 - Oullins</h3>
               <p>Medical studies</p>
               <p>2019-2021</p>
-            </li>
-            <li>
+            </div>
+            <div className="education-card">
               <h3>Institution Saint Joseph - Tassin-la-Demi-Lune</h3>
               <p>Bac S (A-levels)</p>
               <p>2012-2019</p>
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
 
         <section
@@ -65,45 +65,48 @@ function App() {
           tabIndex="0"
         >
           <h2>Projects</h2>
-          <ul className="project-list">
-            <li>
-              <div className="project-pill">
-                <h3>GITI - Conventional Commits Tool</h3>
-                <p>Explore python capabilities through a CLI tool</p>
-              </div>
-            </li>
-            <li>
-              <div className="project-pill">
+          <div className="project-grid">
+            <div className="project-pill">
+              <h3>
+                <a
+                  href="https://github.com/MaximeLeBesnerais/giti_super"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GITI - Conventional Commits Tool
+                </a>
+              </h3>
+              <p>Explore python capabilities through a CLI tool</p>
+            </div>
+            <div className="project-pill">
+              <a
+                href="https://github.com/MaximeLeBesnerais/sharp_todo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h3>Sharp Todo - Todo list on a dotnet core API</h3>
-                <p>
-                  Realize a todo list with a dotnet core API and a python GUI
-                </p>
-              </div>
-            </li>
-            <li>
-              <div className="project-pill">
-                <h3>My website - This website</h3>
-                <p>
-                  Realize a website with ReactJS on a VPS with Apache2 - Good
-                  way to learn ReactJS & hosting a website
-                </p>
-              </div>
-            </li>
-            <li>
-              <div className="project-pill large">
-                <h3>Upcoming projects:</h3>
-                <p>- Textual adventure game in Kotlin (or Java)</p>
-                <p>- Graphical adventure game in C++ (or C)</p>
-                <p>- Mobile App to control my VPS and update my website</p>
-                <p>
-                  - API development on my VPS with authentication system and
-                  user management
-                </p>
-                <p>- Twitter-like website (language to be determined)</p>
-                <p>- Small ecommerce website (language to be determined)</p>
-              </div>
-            </li>
-          </ul>
+              </a>
+              <p>Realize a todo list with a dotnet core API and a python GUI</p>
+            </div>
+            <div className="project-pill">
+              <h3>My website - This website</h3>
+              <p>
+                Realize a website with ReactJS on a VPS with Apache2 - Good way
+                to learn ReactJS & hosting a website
+              </p>
+            </div>
+          </div>
+          <div className="project-pill large">
+            <h3>Upcoming projects</h3>
+            <p>Graphical adventure game in C++ (or C)</p>
+            <p>Mobile App to control my VPS and update my website</p>
+            <p>
+              API development on my VPS with authentication system and user
+              management
+            </p>
+            <p>Twitter-like website (language to be determined)</p>
+            <p>Small ecommerce website (language to be determined)</p>
+          </div>
         </section>
 
         <section
