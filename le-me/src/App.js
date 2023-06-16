@@ -1,15 +1,27 @@
 import React, { useState, useRef } from "react";
 import "./App.css";
+import c_logo from "./assets/C-logo.png";
+import cpp_logo from "./assets/cpp-logo.png";
+import python_logo from "./assets/python-logo.png";
+import golang_logo from "./assets/golang_logo.png";
+import js_logo from "./assets/js-logo.png";
+import react_logo from "./assets/react-logo.png";
+import node_logo from "./assets/node-logo.png";
+import docker_logo from "./assets/docker-logo.png";
+import git_logo from "./assets/git-logo.png";
+import haskell_logo from "./assets/haskell_logo.png";
+import kotlin_logo from "./assets/Kotlin-logo.png";
+import github_logo from "./assets/github.png";
 
 function App() {
-  const [activeSection, setActiveSection] = useState(""); // Track the active section
-  const contentRef = useRef(null); // Reference to the content container
+  const [activeSection, setActiveSection] = useState("");
+  const contentRef = useRef(null);
 
   const scrollToSection = (section) => {
-    setActiveSection(section); // Set the active section
-    const sectionRef = document.getElementById(section); // Get the DOM element of the section
+    setActiveSection(section);
+    const sectionRef = document.getElementById(section);
     if (sectionRef) {
-      sectionRef.scrollIntoView({ behavior: "smooth" }); // Scroll to the section
+      sectionRef.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -109,16 +121,132 @@ function App() {
           </div>
         </section>
 
-        <section
-          id="skills"
-          className={`skills section2 ${
-            activeSection === "skills" ? "active" : ""
-          }`}
-          tabIndex="0" // Add this attribute
-        >
+        <section id="skills" className="skills section2">
           <h2>Skills</h2>
-          {/* Add your skills content here */}
+          <div className="river-container">
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="Python">
+                <img src={python_logo} alt="Python" />
+                <div className="tooltip">
+                  <p>
+                    Python
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="C">
+                <img src={c_logo} alt="C" />
+                <div className="tooltip">
+                  <p>
+                    C
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="C++">
+                <img src={cpp_logo} alt="C++" />
+                <div className="tooltip">
+                  <p>
+                    C++
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="Golang">
+                <img src={golang_logo} alt="Golang" />
+                <div className="tooltip">
+                  <p>
+                    Go
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="JavaScript">
+                <img src={js_logo} alt="JavaScript" />
+                <div className="tooltip">
+                  <p>
+                    JavaScript
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="React">
+                <img src={react_logo} alt="React" />
+                <div className="tooltip">
+                  <p>
+                    React
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="Node.js">
+                <img src={node_logo} alt="Node.js" />
+                <div className="tooltip">
+                  <p>
+                    Node.js
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="Docker">
+                <img src={docker_logo} alt="Docker" />
+                <div className="tooltip">
+                  <p>
+                    Docker
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="GitHub">
+                <img src={github_logo} alt="GitHub" />
+                <div className="tooltip">
+                  <p>
+                    GitHub
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="Git">
+                <img src={git_logo} alt="Git" />
+                <div className="tooltip">
+                  <p>
+                    Git
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="Haskell">
+                <img src={haskell_logo} alt="Haskell" />
+                <div className="tooltip">
+                  <p>
+                    Haskell
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="language-icon-container">
+              <div className="language-icon" data-language="Kotlin">
+                <img src={kotlin_logo} alt="Kotlin" />
+                <div className="tooltip">
+                  <p>
+                    Kotlin
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+
         <section
           id="networks"
           className={`networks section2 ${
